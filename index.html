@@ -5,31 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <link rel="icon" type="image/png" href="/portfolio/icon.png" />
-  <title>Reagan Ochola | Automation Engineer & Full Stack Developer</title>
-  <meta name="description"
-    content="Portfolio of Reagan Ochola - Automation Engineer specializing in AI agents, workflow automation, and full-stack development." />
+  <title>Reagan Ochola | Automation Engineer</title>
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Reagan Ochola | Automation Engineer" />
-  <meta property="og:description"
-    content="Building intelligent systems that streamline workflows and drive business growth through AI and automation." />
-  <meta property="og:image" content="https://ocholar.github.io/portfolio/og-image.png" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="Reagan Ochola | Automation Engineer" />
-  <meta property="twitter:description"
-    content="Building intelligent systems that streamline workflows and drive business growth through AI and automation." />
-  <meta property="twitter:image" content="https://ocholar.github.io/portfolio/og-image.png" />
-  <script type="module" crossorigin src="/portfolio/assets/index-jz9FLJH4.js"></script>
-  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CB7xoaCb.css">
+  <!-- Global Error Handler -->
+  <script>
+    window.onerror = function (message, source, lineno, colno, error) {
+      const root = document.getElementById('root');
+      root.innerHTML = `
+        <div style="color: red; padding: 20px; font-family: monospace;">
+          <h2>Global Error Caught</h2>
+          <p><strong>Message:</strong> ${message}</p>
+          <p><strong>Source:</strong> ${source}:${lineno}:${colno}</p>
+          <pre>${error ? error.stack : 'No stack trace'}</pre>
+        </div>
+      `;
+      console.error('Global Error:', error);
+    };
+  </script>
+  <script type="module" crossorigin src="/portfolio/assets/index-CUrX-AmN.js"></script>
+  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-OiyVNVZ1.css">
 </head>
 
 <body>
   <div id="root"
-    style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; color: #666;">
-    Loading Portfolio...
+    style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #020617; color: #94a3b8; font-family: sans-serif;">
+    <div style="text-align: center;">
+      <div style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Loading Portfolio...</div>
+      <div style="font-size: 0.875rem;">Initializing Application</div>
+    </div>
   </div>
 </body>
 
