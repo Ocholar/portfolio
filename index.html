@@ -1,39 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  <link rel="icon" type="image/png" href="/portfolio/icon.png" />
-  <title>Reagan Ochola | Automation Engineer</title>
-
-  <!-- Global Error Handler -->
-  <script>
-    window.onerror = function (message, source, lineno, colno, error) {
-      const root = document.getElementById('root');
-      root.innerHTML = `
-        <div style="color: red; padding: 20px; font-family: monospace;">
-          <h2>Global Error Caught</h2>
-          <p><strong>Message:</strong> ${message}</p>
-          <p><strong>Source:</strong> ${source}:${lineno}:${colno}</p>
-          <pre>${error ? error.stack : 'No stack trace'}</pre>
-        </div>
-      `;
-      console.error('Global Error:', error);
-    };
-  </script>
-  <script type="module" crossorigin src="/portfolio/assets/index-YNOcGwDP.js"></script>
-  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-7RBa0UOW.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Verification</title>
 </head>
 
-<body>
-  <div id="root"
-    style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #020617; color: #94a3b8; font-family: sans-serif;">
-    <div style="text-align: center;">
-      <div style="margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold;">Loading Portfolio...</div>
-      <div style="font-size: 0.875rem;">Initializing Application</div>
-    </div>
-  </div>
+<body
+  style="background-color: #008000; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif;">
+  <div style="text-align: center;">
+    <h1 style="font-size: 3rem; margin-bottom: 1rem;">Static Deployment Successful</h1>
+    <p style="font-size: 1.5rem;">If you see this green screen, GitHub Pages is working correctly.</p>
+    <p>Time:
+      <script>document.write(new Date().toISOString())</script>
+    </p>
+  </div>
 </body>
 
 </html>
