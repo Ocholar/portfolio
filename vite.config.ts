@@ -7,7 +7,7 @@ const plugins = [react(), tailwindcss()];
 
 export default defineConfig({
   plugins,
-  base: "/",
+  base: "/portfolio/",
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "src"),
