@@ -61,6 +61,7 @@ export default function Portfolio() {
     {
       title: "AI-Powered Lead Qualification",
       description: "LLM agents analyze leads using custom prompts to score and qualify prospects automatically",
+      businessCase: "Saves 4+ hours of manual data entry daily by automatically scoring leads.",
       icon: Brain,
       metrics: "50% qualification rate",
       technologies: ["OpenAI", "n8n", "Node.js"]
@@ -68,6 +69,7 @@ export default function Portfolio() {
     {
       title: "Multi-Source Lead Scraping",
       description: "Automated data extraction from Google Maps, LinkedIn, Facebook, and web sources",
+      businessCase: "Eliminates manual lead hunting, delivering 400+ fresh prospects every month.",
       icon: Globe,
       metrics: "400+ leads/month",
       technologies: ["Puppeteer", "Apify", "Cheerio"]
@@ -75,6 +77,7 @@ export default function Portfolio() {
     {
       title: "Intelligent Form Submission",
       description: "Automated form filling with retry logic, error handling, and success tracking",
+      businessCase: "Reduces submission errors by 95% and ensures 24/7 processing without human intervention.",
       icon: CheckCircle,
       metrics: "99% success rate",
       technologies: ["Playwright", "TypeScript"]
@@ -82,6 +85,7 @@ export default function Portfolio() {
     {
       title: "WhatsApp Outreach Automation",
       description: "Personalized messaging workflows with response tracking and follow-up sequences",
+      businessCase: "Increases response rates by 3x through instant, personalized engagement.",
       icon: MessageSquare,
       metrics: "95% contact rate",
       technologies: ["WhatsApp API", "n8n"]
@@ -89,6 +93,7 @@ export default function Portfolio() {
     {
       title: "Real-time Analytics Dashboard",
       description: "Live KPIs, conversion funnels, and performance metrics with interactive charts",
+      businessCase: "Provides instant visibility into ROI, allowing for data-driven decisions in seconds.",
       icon: BarChart3,
       metrics: "15+ metrics tracked",
       technologies: ["Recharts", "React", "tRPC"]
@@ -96,6 +101,7 @@ export default function Portfolio() {
     {
       title: "Self-Optimizing Workflows",
       description: "Weekly performance analysis with automated parameter tuning based on results",
+      businessCase: "Continuously improves system efficiency, resulting in a 7,000%+ ROI over time.",
       icon: Sparkles,
       metrics: "7000%+ ROI",
       technologies: ["Python", "Pandas", "Scikit-learn"]
@@ -214,8 +220,8 @@ export default function Portfolio() {
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id as typeof activeTab)}
                   className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${activeTab === tab.id
-                      ? "bg-violet-600 text-white shadow-lg shadow-violet-900/20"
-                      : "text-slate-400 hover:text-white hover:bg-slate-700/50"
+                    ? "bg-violet-600 text-white shadow-lg shadow-violet-900/20"
+                    : "text-slate-400 hover:text-white hover:bg-slate-700/50"
                     }`}
                 >
                   {tab.label}

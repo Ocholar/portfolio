@@ -1,11 +1,11 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { LucideIcon } from "lucide-react";
-import { motion } from "framer-motion";
+import { LucideIcon, TrendingUp } from "lucide-react";
 
 export interface ProjectProps {
     title: string;
     description: string;
+    businessCase?: string;
     technologies: string[];
     metrics?: string;
     icon: LucideIcon;
@@ -13,7 +13,7 @@ export interface ProjectProps {
     featured?: boolean;
 }
 
-export function ProjectCard({ title, description, technologies, metrics, icon: Icon, link, featured }: ProjectProps) {
+export function ProjectCard({ title, description, businessCase, technologies, metrics, icon: Icon, link, featured }: ProjectProps) {
     return (
         <Card className={`p-6 bg-slate-800/50 border-slate-700 hover:border-violet-500/50 transition-all group h-full flex flex-col ${featured ? 'border-violet-500/30 bg-violet-500/5' : ''}`}>
             <div className="flex items-start justify-between mb-4">
@@ -31,11 +31,23 @@ export function ProjectCard({ title, description, technologies, metrics, icon: I
                 {title}
             </h3>
 
-            <p className="text-slate-400 text-sm mb-6 flex-grow">
+            <p className="text-slate-400 text-sm mb-4">
                 {description}
             </p>
 
-            <div className="flex flex-wrap gap-2 mt-auto">
+            {businessCase && (
+                <div className="mb-6 p-3 rounded-lg bg-violet-500/10 border border-violet-500/20">
+                    <div className="flex items-center gap-2 mb-1">
+                        <TrendingUp size={14} className="text-violet-400" />
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-violet-400">Business Impact</span>
+                    </div>
+                    <p className="text-xs text-slate-300 italic leading-relaxed">
+                        "{businessCase}"
+                    </p>
+                </div>
+            )}
+
+            <div className="flex flex-wrap gap-2 mt-auto pt-4">
                 {technologies.map((tech) => (
                     <Badge key={tech} variant="secondary" className="bg-slate-900/50 text-slate-500 text-xs hover:text-slate-300">
                         {tech}
