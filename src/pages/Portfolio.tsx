@@ -469,20 +469,42 @@ const qualifyLead = async (lead: Lead) => {
             ))}
           </div>
 
-          {/* Placeholder for future projects */}
-          {/* 
-          <div className="mt-16">
-            <h3 className="text-2xl font-bold mb-8 text-center">Other Projects</h3>
+          <div className="mt-24">
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold mb-12 text-center"
+            >
+              More AI Solutions
+            </motion.h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <ProjectCard 
-                title="Project Name"
-                description="Project description..."
-                technologies={["React", "Node.js"]}
-                icon={Code2}
+              <ProjectCard
+                title="Enterprise RAG System"
+                description="Custom Retrieval-Augmented Generation system for internal technical documentation and SOPs."
+                businessCase="Reduced document search time by 80% and improved support ticket resolution speed by 45%."
+                technologies={["LangChain", "Pinecone", "OpenAI"]}
+                icon={Database}
+                metrics="80% faster search"
+              />
+              <ProjectCard
+                title="AI Customer Support Agent"
+                description="Autonomous support agent that handles 1st-tier inquiries and schedules appointments."
+                businessCase="Handles 70% of routine queries without human intervention, saving 20+ hours of support time weekly."
+                technologies={["Vercel AI SDK", "Next.js", "Claude"]}
+                icon={MessageSquare}
+                metrics="70% automation"
+              />
+              <ProjectCard
+                title="Automated Invoice Processor"
+                description="Vision-LLM pipeline that extracts data from unstructured invoices and syncs with accounting software."
+                businessCase="Eliminated manual data entry for 500+ invoices monthly with 99.8% accuracy."
+                technologies={["GPT-4o", "Python", "n8n"]}
+                icon={Zap}
+                metrics="99.8% accuracy"
               />
             </div>
-          </div> 
-          */}
+          </div>
         </div>
       </section>
 
