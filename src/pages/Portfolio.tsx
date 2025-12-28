@@ -244,6 +244,7 @@ export default function Portfolio() {
                     key={index}
                     title={capability.title}
                     description={capability.description}
+                    businessCase={capability.businessCase}
                     icon={capability.icon}
                     metrics={capability.metrics}
                     technologies={capability.technologies}
